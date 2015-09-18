@@ -1,0 +1,66 @@
+<NotepadPlus>
+    <Project name="MW3">
+        <Folder name="include">
+            <File name="include\cs_playerassist.inc" />
+            <File name="include\frc.inc" />
+            <File name="include\MW3_Commands.inc" />
+            <File name="include\MW3_Core.inc" />
+            <File name="include\MW3_Core_Const.inc" />
+            <File name="include\MW3_Experience.inc" />
+            <File name="include\MW3_Log.inc" />
+            <File name="include\MW3_Messages.inc" />
+            <File name="include\MW3_Perks.inc" />
+            <File name="include\MW3_Perks_Const.inc" />
+            <File name="include\MW3_Scorechain.inc" />
+            <File name="include\MW3_StaticIcon.inc" />
+            <File name="include\screenfade_util.inc" />
+            <File name="include\sqlvault.inc" />
+            <File name="include\sqlvault_ex.inc" />
+            <File name="include\tutor_messages.inc" />
+        </Folder>
+        <Folder name="mw3">
+            <File name="mw3\bonus.wav" />
+            <File name="mw3\hbb.wav" />
+            <File name="mw3\hit_marker.wav" />
+            <File name="mw3\levelup.wav" />
+            <File name="mw3\payback.wav" />
+            <File name="mw3\SACB.spr" />
+            <File name="mw3\tutor.wav" />
+        </Folder>
+        <File name="cs_playerassist.sma" />
+        <File name="flashbang_remote_control.sma" />
+        <File name="MW3_Classes.sma" />
+        <File name="MW3_Commands.sma" />
+        <File name="MW3_DamageEffects.sma" />
+        <File name="MW3_Experience.sma" />
+        <File name="MW3_Experience_HUD.sma" />
+        <File name="MW3_Experience_RankOfficer.sma" />
+        <File name="MW3_Experience_Save.sma" />
+        <File name="MW3_Killbonus.sma" />
+        <File name="MW3_Messages.sma" />
+        <File name="MW3_Perks.sma" />
+        <File name="MW3_Perks_Perks.sma" />
+        <File name="MW3_Scorechain.sma" />
+        <File name="MW3_StaticIcon.sma" />
+        <File name="MW3_StaticIcon_DeathIcon.sma" />
+        <File name="MW3_Workspace" />
+        <File name="tutor_messages.sma" />
+    </Project>
+    <Project name="ZMB">
+        <Folder name="resources" />
+        <Folder name="scripting">
+            <Folder name="include">
+                <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\include\colorchat.inc" />
+                <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\include\ZMB_Manager.inc" />
+                <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\include\ZMB_Commands.inc" />
+                <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\include\ZMB_Const.inc" />
+                <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\include\ZMB_Log.inc" />
+                <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\include\ZMB_Misc.inc" />
+                <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\include\ZMB_Precacher.inc" />
+                <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\include\ZMB.inc" />
+            </Folder>
+            <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\ZMB_Manager.sma" />
+            <File name="C:\HLServer\cstrike\addons\amxmodx\scripting\zmb\scripting\ZMB_Commands.sma" />
+        </Folder>
+    </Project>
+</NotepadPlus>

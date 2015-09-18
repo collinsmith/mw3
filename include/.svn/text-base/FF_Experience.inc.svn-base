@@ -1,0 +1,29 @@
+#if defined _FF_Experience
+	#endinput
+#endif
+#define _FF_Experience
+
+#if AMXX_VERSION_NUM >= 175
+	#pragma reqlib FF_Experience
+	#if !defined AMXMODX_NOAUTOLOAD
+		#pragma loadlib FF_Experience
+	#endif
+#else
+	#pragma library FF_Experience
+#endif
+
+forward ff_fw_player_rankup(id, rank);
+forward ff_fw_player_gainxp(id, xp_gained, xp_before);
+
+native ff_changeUserExperience(id, exp, bool:notifyLevelChange = true);
+native ff_getUserExperience(id);
+native ff_setUserExperience(id, exp, bool:notifyLevelChange = false);
+
+native ff_setUserRank(id, rank, bool:notifyLevelChange = true);
+native ff_getUserRank(id);
+
+native ff_getRankExperience(rank);
+native ff_getRankName(rank, dest[], len);
+
+native ff_getMaxRank();
+native ff_queryRank(exp);

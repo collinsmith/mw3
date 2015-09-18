@@ -1,0 +1,30 @@
+#if defined _MW3_StaticIcon
+	#endinput
+#endif
+#define _MW3_StaticIcon
+
+#if AMXX_VERSION_NUM >= 175
+	#pragma reqlib MW3_StaticIcon
+	#if !defined AMXMODX_NOAUTOLOAD
+		#pragma loadlib MW3_StaticIcon
+	#endif
+#else
+	#pragma library MW3_StaticIcon
+#endif
+
+#include <cstrike>
+
+enum iconStatus {
+	icon_Hidden = 0,
+	icon_Showing,
+	icon_None
+};
+
+native MW3_StaticIcon_createIcon(ent, CsTeams:team, bool:canWithHacker, spriteID, const spritePath[]); // return ent id
+native bool:MW3_StaticIcon_removeIcon(ent); // return true/false
+native iconStatus:MW3_StaticIcon_setIconState(ent, iconStatus:iconState); // return icon.iconStatus
+native iconStatus:MW3_StaticIcon_getIconState(ent); // return icon.iconStatus
+native MW3_StaticIcon_changeIconTeam(ent, CsTeams:team); // must enter sprite id returned in _createIcon
+/** AMXX-Studio Notes - DO NOT MODIFY BELOW HERE
+*{\\ rtf1\\ ansi\\ deff0{\\ fonttbl{\\ f0\\ fnil Tahoma;}}\n\\ viewkind4\\ uc1\\ pard\\ lang1033\\ f0\\ fs16 \n\\ par }
+*/

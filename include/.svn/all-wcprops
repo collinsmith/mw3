@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/30/trunk/include
+END
+MW3_Log.inc
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/19/trunk/include/MW3_Log.inc
+END
+sqlvault_ex.inc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/27/trunk/include/sqlvault_ex.inc
+END
+cs_playerassist.inc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/29/trunk/include/cs_playerassist.inc
+END
+MW3_CommandModule.inc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/6/trunk/include/MW3_CommandModule.inc
+END
+frc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/30/trunk/include/frc.inc
+END
+sqlvault.inc
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/24/trunk/include/sqlvault.inc
+END
+MW3_Experience.inc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/7/trunk/include/MW3_Experience.inc
+END
+MW3_Core_Const.inc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/27/trunk/include/MW3_Core_Const.inc
+END
+MW3_StaticIcon.inc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/20/trunk/include/MW3_StaticIcon.inc
+END
+screenfade_util.inc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/30/trunk/include/screenfade_util.inc
+END
+MW3_PerkModule.inc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/23/trunk/include/MW3_PerkModule.inc
+END
+MW3_Messages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/16/trunk/include/MW3_Messages.inc
+END
+FF_Experience.inc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/include/FF_Experience.inc
+END
+MW3_PerkModule_Const.inc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3/trunk/include/MW3_PerkModule_Const.inc
+END
+tutor_messages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/14/trunk/include/tutor_messages.inc
+END

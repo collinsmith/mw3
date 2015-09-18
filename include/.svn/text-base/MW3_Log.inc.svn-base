@@ -1,0 +1,68 @@
+#if defined _MW3_Log
+	#endinput
+#endif
+#define _MW3_Log
+
+#include <amxmodx>
+#include <amxmisc>
+#include <colorchat>
+#include <tutor_messages>
+
+#include <MW3_Core_Const>
+
+stock mw3_log(message[], any:...) {
+	static message_fmt[256], filename[96], dir[64];
+	vformat(message_fmt, 255, message, 2);
+	if(!dir[0]) {
+		get_basedir(dir, sizeof(dir) - 1);
+	}
+	
+	format_time(filename, 95, "%Y%m%d");
+	format(filename, 95, "%s/logs/ModernWarfare3_%s.log", dir, filename);
+	log_to_file(filename, "%s", message_fmt);
+}
+
+stock mw3_log_err(error[], any:...) {
+	static numArguments;
+	numArguments = numargs();
+	
+	if (numArguments == 1) {
+		sendErrorMessage(error);
+	} else {
+		static buffer[128];
+		vformat(buffer, 127, error, 2);
+		sendErrorMessage(buffer);
+	}
+}
+
+static stock sendErrorMessage(error[]) {
+	mw3_log(error);
+	log_error(AMX_ERR_NATIVE, "%s %s", _errorMessageHeader, error);
+}
+
+stock mw3_print_color(id, szMsg[], any:...) {
+	static numArguments;
+	numArguments = numargs();
+	
+	if (numArguments == 2) {
+		client_print_color(id, DontChange, "%s %s", _formattedHeader, szMsg);
+	} else {
+		static buffer[192];
+		vformat(buffer, 191, szMsg, 3);
+		client_print_color(id, DontChange, "%s %s", _formattedHeader, buffer);
+	}
+}
+
+stock mw3_createTutorMsg(id, pid, tutorMode, Float:flTime, szAnnouncement[]) {
+	static buffer[128], szPlayerName[32];
+	get_user_name(pid, szPlayerName, 31);
+	formatex(buffer, 127, "%s^n->%s<-", szPlayerName, szAnnouncement);
+	tutor_createTutorMsg(id, tutorMode, flTime, buffer);
+}
+
+stock mw3_playSound(id, const szSound[]) {
+	client_cmd(id, "spk %s", szSound);
+}
+/** AMXX-Studio Notes - DO NOT MODIFY BELOW HERE
+*{\\ rtf1\\ ansi\\ deff0{\\ fonttbl{\\ f0\\ fnil Tahoma;}}\n\\ viewkind4\\ uc1\\ pard\\ lang1033\\ f0\\ fs16 \n\\ par }
+*/
